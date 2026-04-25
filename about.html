@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Binary / Hex / Decimal Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F4F6F8; --white:#FFFFFF; --border:#D0D5DD; --ink:#101828; --ink-mid:#344054; --ink-light:#667085; --blue:#2563EB; }
+    body { font-family: 'IBM Plex Sans', sans-serif; background: var(--bg); color: var(--ink); }
+    header { background: var(--ink); color: white; padding: 24px; text-align: center; }
+    header a { color: #60A5FA; text-decoration: none; font-size: 0.9rem; display: block; margin-bottom: 12px; }
+    header h1 { font-family: 'IBM Plex Mono', monospace; font-size: 1.5rem; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 24px; }
+    h2 { font-family: 'IBM Plex Mono', monospace; font-size: 1rem; font-weight: 700; color: var(--ink); margin: 32px 0 12px; }
+    p { color: var(--ink-mid); line-height: 1.75; margin-bottom: 14px; font-size: 0.95rem; }
+    a { color: var(--blue); text-decoration: none; }
+    code { font-family: 'IBM Plex Mono', monospace; background: #EAECF0; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    footer { text-align: center; padding: 24px; background: var(--ink); color: #64748B; font-size: 13px; margin-top: 48px; }
+    footer a { color: #60A5FA; }
+    footer .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 12px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">← Back to Binary / Hex / Decimal Converter</a>
+    <h1>About This Tool</h1>
+  </header>
+  <main>
+    <h2>What this tool does</h2>
+    <p>The Binary / Hex / Decimal Converter instantly converts numbers between four bases: decimal (base 10), binary (base 2), hexadecimal (base 16), and octal (base 8). Type in any field and all others update simultaneously.</p>
+
+    <h2>Who it's for</h2>
+    <p>Developers, computer science students, system administrators, and anyone who works with low-level programming, networking, or digital electronics. It's particularly useful for understanding memory addresses, color codes, file permissions, and bitwise operations.</p>
+
+    <h2>How it works</h2>
+    <p>All conversions happen in your browser using JavaScript's built-in number parsing and toString methods. Input is validated in real time — binary only accepts 0 and 1, hex accepts 0–9 and A–F, and so on. Invalid input is highlighted immediately.</p>
+    <p>The tool also validates that your input is a legitimate number in its base — for example, it won't accept <code>IIII</code> as valid hex even though all characters are technically valid, because the round-trip conversion won't match.</p>
+
+    <h2>Supported range</h2>
+    <p>The tool handles non-negative integers. Very large numbers may lose precision due to JavaScript's floating point limitations, but for typical programming use cases (up to 32-bit integers) it is fully accurate.</p>
+
+    <h2>Part of QuickUtils</h2>
+    <p>This tool is part of <a href="https://quickutils.tools">quickutils.tools</a> — a growing collection of free, no-signup utility tools.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or suggestions? Visit our <a href="/contact.html">contact page</a>.</p>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="/">Binary Converter</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/contact.html">Contact</a>
+      <a href="https://quickutils.tools">All Tools</a>
+    </div>
+    <p>&copy; 2026 quickutils.tools</p>
+  </footer>
+</body>
+</html>
